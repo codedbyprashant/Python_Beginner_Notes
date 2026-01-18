@@ -24,8 +24,8 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 ## 3. Python Basics
 - [3.1 Python Shell vs Scripts](#python-shell-vs-scripts)
 - [3.2 Creating a Python File](#creating-a-python-file)
-- [3.3 The print Function](#the-print-function)
-- [3.4 Comments Single & Multi-line](#comments-single--multi-line)
+- [3.3 Comments Single & Multi-line](#comments-single--multi-line)
+- [3.4 The print Function](#the-print-function)
 - [3.5 Variables](#variables)
 - [3.6 Naming Rules & Conventions](#naming-rules--conventions)
 - [3.7 Keywords](#keywords)
@@ -337,3 +337,145 @@ python my_script.py
 - Create a new file and save it with a .py extension, e.g., hello.py.
 - In Python file, we write code to perfrom tasks.
 - **💡 Tip:** For beginners, always save your scripts in a separate folder for projects to keep them organized.
+---
+# Comments Single & Multi-line
+Comments are lines in your code that Python ignores. They are used to explain what the code is doing. Comments are for humans, not for the computer.
+
+**Why Comments Matter:**
+- Make code easier to understand
+- Help others read your code
+- Help you remember what your code does later
+
+**Single-line Comment**
+```python
+# This is a single-line comment
+```
+**Inline Comment**
+```python
+print("Hello")  # This prints a message on the screen
+```
+**Multi-line Comment**
+```python
+"""
+This is a multi-line comment.
+It is useful for writing longer explanations.
+"""
+```
+## Notes / Tips:
+- Use comments to explain why something is done, not just what is done.
+- Too many comments can be noisy, but no comments makes code hard to read.
+- Python does not have official multi-line comments. Triple quotes are often used for explanations or documentation.
+
+---
+# The print() Function
+The print() function is used to display output on the screen. It’s the simplest way to see the results of your code and is often the first function beginners learn in Python.
+## **Example / Use Case:**
+- Display text messages.
+- Show numbers or calculations.
+```python
+# Printing simple text
+print("Hello World!")  #output : Hello World!
+
+# Printing numbers
+print(5)               #output : 5
+print(2 + 6)           #output : 8
+
+# Printing multiple values
+print("Hello", "World")  # outputs: Hello World
+```
+# Variables
+- A variable is used to store data in a program. This data can be a number, text, or any other value that you want to reuse later.
+- Think of a variable as a label attached to a value.
+
+**Why Variables Are Needed:**
+- To store information
+- To reuse values instead of repeating them
+- To make programs dynamic and flexible
+```python
+name = "Python"
+age = 10
+price = 99.99
+```
+**Here:**
+- name stores text (string)
+- age stores a whole number (integer)
+- price stores a decimal number (float)
+  
+ **We will discuss string, integer,float,etc in future.             [Click Here](#built-in-data-types)**
+
+**Using Variables with print()**
+```python
+name = "Python"
+print(name)
+
+age = 10
+print(age)
+```
+
+**Output:**
+```python
+Python
+10
+```
+---
+# Naming Rules & Conventions
+Naming rules define how variables should be named in Python. These rules make sure Python understands your code and that it remains readable for humans.
+
+**Why Naming Rules Matter:**
+- Prevent syntax errors
+- Make code easier to read
+- Help others understand your code quickly
+
+**Rules for Naming Variables:**
+- Variable names can contain letters, numbers, and underscores (_)
+- A variable name must not start with a number
+- Variable names cannot be Python keywords---> **(e.g : print, input, if, else,etc cannot be used as variable name.)**
+- Variable names are case-sensitive ---> **(Case sensitive means the Python recognizes the difference between capital and lowercase letters.)**
+
+**Valid Variable Names**
+```python
+user_name = "Alex"
+age = 20
+_total = 100
+user1 = "Sam"
+```
+**Invalid Variable Names**
+```python
+1user = "Alex"      # starts with a number
+user-name = "Sam"   # hyphen is not allowed
+class = "Math"      # keyword
+```
+**Case Sensitivity Example**
+```python
+name = "Alex"
+Name = "Sam"
+
+print(name)
+print(Name)
+```
+- These are treated as different variables.
+
+**Naming Conventions (Best Practice):**
+- Use snake_case for variable names
+```python
+total_marks = 450
+user_age = 21
+```
+
+- Use clear and meaningful names
+```python
+score = 95      # good
+s = 95          # not recommended
+```
+**Notes / Tips:**
+- Avoid single-letter variable names unless in loops (later topic).
+- Good names reduce the need for comments.
+- Follow consistency throughout your code
+---
+# Keywords
+Keywords are reserved words in Python that have a special meaning. Python uses them to define its own syntax and structure. Because of this, keywords **cannot be used as variable names**.
+
+**Why Keywords Matter:**
+- They form the building blocks of Python programs
+- They are used for conditions, loops, functions, and more
+- Using them incorrectly will cause errors
