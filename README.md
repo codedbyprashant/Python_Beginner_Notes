@@ -9,7 +9,7 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 # Table of Contents
 
 ## 1. Introduction to Python
-  #### 1.1 What is Python?
+  #### 1.1 [What is Python?](#what-is-python)
   #### 1.2 History & Evolution
   #### 1.3 Why Learn Python?
   #### 1.4 Features of Python
@@ -18,16 +18,15 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 #### 2.1 Installing Python
 #### 2.2 Checking Python Version
 #### 2.3 Running Python (Terminal vs IDE)
-#### 2.4 Setting Up VS Code (Optional)
-
+#### 2.4 Setting Up VS Code 
 ## 3. Python Basics
-#### 3.1 Python Shell vs Scripts
-#### 3.2 Python Keywords
-#### 3.3 Comments (Single & Multi-line)
-#### 3.4 Variables
-#### 3.5 Naming Rules & Conventions
-#### 3.6 Indentation & Code Blocks
-#### 3.7 The print() Function
+#### 3.1 Python Shell vs Scripts 
+#### 3.2 - [Creating a Python File](#creating-a-python-file)
+#### 3.3 The print() Function
+#### 3.4 Comments (Single & Multi-line)
+#### 3.5 Variables
+#### 3.6 Naming Rules & Conventions
+#### 3.7 Keywords
 
 ## 4. Data Types & Operators
 #### 4.1 Built-in Data Types
@@ -48,6 +47,7 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 #### 5.3 If-Else Statement
 #### 5.4 Elif Ladder
 #### 5.5 Nested Conditions
+#### 5.6 Indentation Rules
 
 ## 6. Loops & Iteration
 #### 6.1 For Loop
@@ -133,11 +133,11 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 ##### iii) Automation
 ##### iv) AI & Machine Learning
 
+---
 # What is Python?
 
 Python is a **programming language** used to give instructions to a computer. These instructions can be simple, like printing text on the screen, or complex, like building websites, analyzing data, or training AI models.
 
----
 
 ## Why Python is Popular
 
@@ -148,13 +148,10 @@ Python is known for:
 - **Large community support:** Tons of tutorials, libraries, and forums.
 - **High-level language:** Lets you focus on problem-solving instead of low-level details like memory management.
 
----
 
 ## High-Level Language
 
 Being a high-level language means Python **hides low-level details** such as memory allocation and hardware control. You don’t need to worry about how the computer stores data—Python handles it for you—so you can focus on the **logic of your program**.
-
----
 
 ## Interpreted Language
 
@@ -166,7 +163,7 @@ Benefits of this:
 - Testing code is faster
 - You can run code interactively in a REPL (Read-Eval-Print Loop)
 
-
+---
 # History and Evolution of Python
 
 Python was developed in the **late 1980s** by **Guido van Rossum** at **CWI (Netherlands)** and was officially released in **1991**. The language was inspired by:
@@ -222,11 +219,115 @@ Readable and does exactly what it says.
 
 - **Dynamic Typing**: You don’t need to declare variable types. Python figures them out:
 
-```age = 20      # Integer
-name = "Alex" # String
-
+```
+   age = 20      # Integer
+   name = "Alex" # String
+```
 
 - **Extensive Libraries**: Thousands of built-in modules and third-party libraries for math, web, AI, data science, and more.
 - **Cross-Platform**: Works on Windows, Mac, Linux, and Raspberry Pi.
+- **Community Support**: A large, active community provides tutorials, help, and resources.
+---
+# Real-World Uses of Python
 
-Community Support: A large, active community provides tutorials, help, and resources.
+Python is versatile and widely used across industries:
+
+- **Web Development:** Build websites and web apps using Django and Flask.
+- **Data Science & Analytics:** Analyze data, create visualizations, and make predictions with Pandas, NumPy, Matplotlib.
+- **Artificial Intelligence & Machine Learning:** Build AI models, chatbots, and recommendation systems using TensorFlow and PyTorch.
+- **Automation & Scripting:** Automate repetitive tasks like file handling, web scraping, and emails.
+- **Game Development:** Create simple games and prototypes with Pygame.
+- **Internet of Things (IoT):** Control devices and sensors using Python on Raspberry Pi.
+- **Education & Research:** Widely used in schools and universities to teach programming and problem-solving.
+---
+# Installation & Setup
+Before we start coding in Python, we need to install it and set up an environment to run our programs.
+
+## Installing Python
+
+- Go to the official Python website: https://www.python.org/downloads/
+
+- Download the latest version for your operating system (Windows, Mac, or Linux).
+
+- **Run the installer**:
+
+Important (Windows only): Check the box that says “Add Python to PATH” before clicking Install.
+
+Wait for the installation to complete.
+
+## Checking Python Version
+After installing, make sure Python is installed correctly:
+- **Open the terminal** (Command Prompt on Windows, Terminal on Mac/Linux).
+Type:
+```
+python --version
+```
+- You should see the Python version installed, e.g., Python 3.12.0.
+
+ ## Running Python (Terminal vs IDE)
+
+There are **two ways** to run Python code:
+
+**1. Using the Python Shell (Interactive Mode)**
+-Open terminal and type python or python3.
+-You’ll see >>> which is the interactive prompt.
+-Example:
+```
+>>> print("Hello World!")
+Hello World!
+```
+**2. Using Scripts (Files)**
+-Write your Python code in a file with .py extension, e.g., hello.py.
+- Run it in terminal:
+```
+python hello.py
+```
+- This is the standard way to work on bigger projects.
+
+
+## Setting Up VS Code 
+
+ VS Code is a lightweight, beginner-friendly code editor.
+- Download VS Code: https://code.visualstudio.com/
+- Install it.
+- Install the Python Extension inside VS Code:
+- Open VS Code → Extensions → Search “Python” → Install.
+- Open a folder for your Python projects and create .py files to start coding. eg. index.py
+-You can run code directly in VS Code using the “Run” button or the integrated terminal.
+
+### 💡 Tip:
+For beginners, start with VS Code. It’s easier to manage files, see errors, and later work on bigger projects.
+
+---
+
+# Python Basics
+These are the building blocks of Python. You’ll start seeing results immediately while learning the basic concepts.
+
+## Python Shell vs Scripts 
+
+**Python Shell (Interactive Mode)**
+Lets you type and run Python code line by line.
+Useful for testing small pieces of code.
+- Example:
+```
+>>> 2 + 3
+5
+>>> print("Hello World!")
+Hello World!
+```
+
+## Python Scripts (File Mode)
+
+Programs saved in a file with .py extension.
+
+Run the entire program at once using the terminal:
+```
+python my_script.py
+
+```
+---
+# Creating a Python File:
+- Open Visual Studio Code.
+- Create a new file and save it with a .py extension, e.g., hello.py.
+- In Python file, we write code to perfrom tasks.
+- **💡 Tip:** For beginners, always save your scripts in a separate folder for projects to keep them organized.
