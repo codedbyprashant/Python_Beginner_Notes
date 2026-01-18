@@ -32,10 +32,10 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 
 ## 4. Data Types & Operators
 - [4.1 Built-in Data Types](#built-in-data-types)
-  - [Integer int](#integer-int)
-  - [Float float](#float-float)
-  - [String str](#string-str)
-  - [Boolean bool](#boolean-bool)
+  - [Integer (int)](#integer-int)
+  - [Float (float)](#float-float)
+  - [String (str)](#string-str)
+  - [Boolean (bool)](#boolean-bool)
 - [4.2 The type Function](#the-type-function)
 - [4.3 Type Conversion](#type-conversion)
 - [4.4 Arithmetic Operators](#arithmetic-operators)
@@ -304,6 +304,7 @@ python hello.py
 ### 💡 Tip:
 For beginners, start with VS Code. It’s easier to manage files, see errors, and later work on bigger projects.
 
+## [⬆ Back to Top](#table-of-contents)
 ---
 
 # Python Basics
@@ -492,4 +493,317 @@ print(keyword.kwlist)
 - You do not need to memorize all keywords.
 - You’ll learn them naturally as you write more code.
 - If Python shows an error while naming a variable, check if it’s a keyword.
+
+## [⬆ Back to Top](#table-of-contents)
+---
+# Data Types
+Data types tell Python what kind of value a variable holds. Different data types allow Python to decide how the data should be stored and used.
+Python figures out the data type automatically. You don’t need to declare it.
+
+**Why Data Types Matter:**
+- They decide what operations are allowed
+- They help avoid logical errors
+- They make your code predictable
+
+# Built-in Data Types
+## Integer (int)
+- Whole numbers without decimals.
+```python
+age = 25
+score = 100
+```
+## Float (float)
+- Numbers with decimal points.
+```python
+price = 99.99
+pi = 3.14
+```
+
+## String (str)
+- Text data written inside quotes.
+```python
+name = "Python"
+message = 'Hello'
+```
+
+## Boolean (bool)
+- Represents true or false values.
+```python
+is_active = True
+is_logged_in = False
+```
+**Notes / Tips:**
+- Strings can use single or double quotes.
+- Boolean values must start with a capital letter.
+- Python is dynamically typed, so variable types can change.
+```python
+value = 10
+value = "Ten"
+```
+---
+# The type() function
+The type() function is used to find the data type of a value or a variable. It helps you understand what kind of data Python is working with.
+
+**Why type() Is Useful:**
+- To check the data type of a value
+- To debug unexpected behavior
+- To understand how Python treats your data
+```python
+print(type(10))
+print(type(3.5))
+print(type("Hello"))
+print(type(True))
+```
+**Output :**
+```python
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'bool'>
+```
+**Checking Type of Variables**
+```python
+age = 25
+price = 9.19
+name = "Python"
+
+print(type(age))
+print(type(price))
+print(type(name))
+```
+**Output :**
+```python
+<class 'int'>
+<class 'float'>
+<class 'str'>
+```
+**Notes / Tips:**
+- type() does not change the value. It only tells you the type.
+- Python decides the type at runtime.
+- This function is commonly used while learning and debugging.
+---
+
+# Type Conversion
+Type conversion is the process of converting a value from one data type to another. This can happen automatically (implicit) or manually (explicit).
+
+## Implicit Type Conversion (Type Casting)
+Python automatically converts one data type to another without the programmer’s intervention. This happens when Python wants to prevent data loss during operations.
+
+**Example / Use Case:**
+- Mixing integers and floats in calculations.
+- Code:
+```python
+# Adding integer and float
+num1 = 5      # int
+num2 = 2.5    # float
+
+result = num1 + num2
+print(result)      # 7.5
+print(type(result)) # <class 'float'>
+```
+**Notes:**
+- Python converts the integer 10 to a float automatically.
+- This is called implicit type conversion or type coercion.
+- Safe conversions only,Python won’t automatically convert a string to a number.
+---
+## Explicit Type Conversion (Type Casting)
+You manually convert a value from one data type to another using functions like int(), float(), str(), or bool().
+
+**Example / Use Case:**
+- Converting user input (string) to a number before calculations.
+- Code:
+```python
+# String to integer
+num = "10"
+num = int(num)
+print(num)       # 10
+print(type(num)) # <class 'int'>
+
+# Integer to float
+num2 = 5
+print(float(num2))  # 5.0
+
+# Integer to string
+num3 = 20
+print(str(num3))    # '20'
+```
+**Notes:**
+- Always ensure the value is compatible with the type you are converting to.
+- Explicit conversion gives you control over the process, unlike implicit conversion.
+
+  ## [⬆ Back to Top](#table-of-contents)
+---
+#  Arithmetic Operators
+Arithmetic operators are used to perform **mathematical calculations** in Python, like addition, subtraction, multiplication, and division.
+| Operator | Meaning             | Example       |
+| -------- | ------------------- | ------------- |
+| `+`      | Addition            | `5 + 3 = 8`   |
+| `-`      | Subtraction         | `5 - 3 = 2`   |
+| `*`      | Multiplication      | `5 * 3 = 15`  |
+| `/`      | Division            | `5 / 2 = 2.5` |
+| `//`     | Floor Division      | `5 // 2 = 2`  |
+| `%`      | Modulus (Remainder) | `5 % 2 = 1`   |
+| `**`     | Exponent / Power    | `5 ** 2 = 25` |
+
+**Code Examples:**
+```python
+# Addition
+print(5 + 3)  # 8
+
+# Subtraction
+print(5 - 3)  # 2
+
+# Multiplication
+print(5 * 3)  # 15
+
+# Division
+print(5 / 2)  # 2.5
+
+# Floor Division
+print(5 // 2) # 2
+
+# Modulus (Remainder)
+print(5 % 2)  # 1
+
+# Exponent / Power
+print(5 ** 2) # 25
+```
+**Notes / Tips:**
+- / always returns a float, even if the result is a whole number.
+- // gives the whole number part only.
+- % is useful for checking even/odd numbers:
+```python
+print(4 % 2)  # 0 → even
+print(5 % 2)  # 1 → odd
+```
+---
+# Assignment Operators
+Assignment operators are used to **store or update values** in a variable. The simplest assignment operator is =, but there are shortcuts that combine arithmetic with assignment.
+
+**Common Assignment Operators**
+| Operator | Meaning                 | Example                  |
+| -------- | ----------------------- | ------------------------ |
+| `=`      | Assign a value          | `x = 5`                  |
+| `+=`     | Add and assign          | `x += 3` → `x = x + 3`   |
+| `-=`     | Subtract and assign     | `x -= 2` → `x = x - 2`   |
+| `*=`     | Multiply and assign     | `x *= 4` → `x = x * 4`   |
+| `/=`     | Divide and assign       | `x /= 2` → `x = x / 2`   |
+| `//=`    | Floor divide and assign | `x //= 3` → `x = x // 3` |
+| `%=`     | Modulus and assign      | `x %= 2` → `x = x % 2`   |
+| `**=`    | Exponent and assign     | `x **= 2` → `x = x ** 2` |
+
+**Code Examples:**
+```python
+# Basic assignment
+x = 5
+print(x)  # 5
+
+# Add and assign
+x += 3
+print(x)  # 8  (5 + 3)
+
+# Subtract and assign
+x -= 2
+print(x)  # 6  (8 - 2)
+
+# Multiply and assign
+x *= 4
+print(x)  # 24 (6 * 4)
+
+# Divide and assign
+x /= 3
+print(x)  # 8.0 (24 / 3)
+
+# Floor divide and assign
+x //= 3
+print(x)  # 2.0 (8.0 // 3)
+
+# Modulus and assign
+x %= 2
+print(x)  # 0.0 (2.0 % 2)
+
+# Exponent and assign
+x = 3
+x **= 2
+print(x)  # 9 (3 squared)
+```
+**Notes / Tips:**
+- These operators update the value of a variable without writing it twice.
+- +=, -=, *=, etc., are very common in loops and calculations.
+- Floor division //= keeps the integer part only.
+---
+# Comparison Operators
+Comparison operators are used to **compare two values**. They return a **Boolean value**: True or False.
+
+**Why Comparison Operators Matter:**
+- To make decisions in your program
+- Often used in if statements, loops, and conditions
+
+**Common Comparison Operators**
+| Operator | Meaning               | Example          |
+| -------- | --------------------- | ---------------- |
+| `==`     | Equal to              | `5 == 5 → True`  |
+| `!=`     | Not equal to          | `5 != 3 → True`  |
+| `>`      | Greater than          | `5 > 3 → True`   |
+| `<`      | Less than             | `5 < 3 → False`  |
+| `>=`     | Greater than or equal | `5 >= 5 → True`  |
+| `<=`     | Less than or equal    | `5 <= 3 → False` |
+
+**Code Examples:**
+```python
+# Equal to
+print(5 == 5)  # True
+print(5 == 3)  # False
+
+# Not equal to
+print(5 != 3)  # True
+print(5 != 5)  # False
+
+# Greater than / Less than
+print(5 > 3)   # True
+print(5 < 3)   # False
+
+# Greater than or equal / Less than or equal
+print(5 >= 5)  # True
+print(5 <= 3)  # False
+```
+**Notes / Tips:**
+- Always remember: == is comparison, = is assignment.
+- Comparison operators return True or False.
+- Useful inside if statements and loops to control the program flow.
+---
+# Logical Operators
+Logical operators are used to **combine multiple conditions** and return a Boolean value (True or False).
+
+**Why Logical Operators Matter:**
+- To check more than one condition at a time
+- Often used in if statements, loops, and complex decisions
+
+**Common Logical Operators**
+| Operator | Meaning                      | Example                      |
+| -------- | ---------------------------- | ---------------------------- |
+| `and`    | True if both are True        | `(5 > 3) and (2 < 4) → True` |
+| `or`     | True if at least one is True | `(5 < 3) or (2 < 4) → True`  |
+| `not`    | Reverses the result          | `not (5 > 3) → False`        |
+
+**Code Examples:**
+```python
+# AND operator
+print((5 > 3) and (2 < 4))  # True
+print((5 > 3) and (2 > 4))  # False
+
+# OR operator
+print((5 > 3) or (2 > 4))   # True
+print((5 < 3) or (2 > 4))   # False
+
+# NOT operator
+print(not (5 > 3))          # False
+print(not (5 < 3))          # True
+```
+**Notes / Tips:**
+- **and** requires both conditions to be True.
+- **or** requires at least one condition to be True.
+- **not** simply reverses the result.
+- Logical operators are often combined with comparison operators for decision-making
+## [⬆ Back to Top](#table-of-contents)
 ---
