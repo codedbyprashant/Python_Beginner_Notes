@@ -479,3 +479,17 @@ Keywords are reserved words in Python that have a special meaning. Python uses t
 - They form the building blocks of Python programs
 - They are used for conditions, loops, functions, and more
 - Using them incorrectly will cause errors
+
+**Python Keywords:**
+![Python Keywords](images/Python_keywords-1024x485.jpg)
+
+**Checking All Keywords in Python**
+```python
+import keyword
+print(keyword.kwlist)
+```
+**Notes / Tips:**
+- You do not need to memorize all keywords.
+- You’ll learn them naturally as you write more code.
+- If Python shows an error while naming a variable, check if it’s a keyword.
+---
