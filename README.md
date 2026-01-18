@@ -9,129 +9,131 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 # Table of Contents
 
 ## 1. Introduction to Python
-  #### 1.1 [What is Python?](#what-is-python)
-  #### 1.2 History & Evolution
-  #### 1.3 Why Learn Python?
-  #### 1.4 Features of Python
-  #### 1.5 Real-World Uses of Python
+- [1.1 What is Python?](#what-is-python)
+- [1.2 History & Evolution](#history--evolution)
+- [1.3 Why Learn Python?](#why-learn-python)
+- [1.4 Features of Python](#features-of-python)
+- [1.5 Real-World Uses of Python](#real-world-uses-of-python)
+
 ## 2. Installation & Setup
-#### 2.1 Installing Python
-#### 2.2 Checking Python Version
-#### 2.3 Running Python (Terminal vs IDE)
-#### 2.4 Setting Up VS Code 
+- [2.1 Installing Python](#installing-python)
+- [2.2 Checking Python Version](#checking-python-version)
+- [2.3 Running Python Terminal vs IDE](#running-python-terminal-vs-ide)
+- [2.4 Setting Up VS Code](#setting-up-vs-code)
+
 ## 3. Python Basics
-#### 3.1 Python Shell vs Scripts 
-#### 3.2 - [Creating a Python File](#creating-a-python-file)
-#### 3.3 The print() Function
-#### 3.4 Comments (Single & Multi-line)
-#### 3.5 Variables
-#### 3.6 Naming Rules & Conventions
-#### 3.7 Keywords
+- [3.1 Python Shell vs Scripts](#python-shell-vs-scripts)
+- [3.2 Creating a Python File](#creating-a-python-file)
+- [3.3 The print Function](#the-print-function)
+- [3.4 Comments Single & Multi-line](#comments-single--multi-line)
+- [3.5 Variables](#variables)
+- [3.6 Naming Rules & Conventions](#naming-rules--conventions)
+- [3.7 Keywords](#keywords)
 
 ## 4. Data Types & Operators
-#### 4.1 Built-in Data Types
-##### Integer (int)
-##### Float (float)
-##### String (str)
-##### Boolean (bool)
-#### 4.2 The type() Function
-#### 4.3 Type Conversion
-#### 4.4 Arithmetic Operators
-#### 4.5 Assignment Operators
-#### 4.6 Comparison Operators
-#### 4.7 Logical Operators
+- [4.1 Built-in Data Types](#built-in-data-types)
+  - [Integer int](#integer-int)
+  - [Float float](#float-float)
+  - [String str](#string-str)
+  - [Boolean bool](#boolean-bool)
+- [4.2 The type Function](#the-type-function)
+- [4.3 Type Conversion](#type-conversion)
+- [4.4 Arithmetic Operators](#arithmetic-operators)
+- [4.5 Assignment Operators](#assignment-operators)
+- [4.6 Comparison Operators](#comparison-operators)
+- [4.7 Logical Operators](#logical-operators)
 
 ## 5. User Input & Control Flow
-#### 5.1 Taking User Input (input())
-#### 5.2 If Statement
-#### 5.3 If-Else Statement
-#### 5.4 Elif Ladder
-#### 5.5 Nested Conditions
-#### 5.6 Indentation Rules
+- [5.1 Taking User Input input](#taking-user-input-input)
+- [5.2 If Statement](#if-statement)
+- [5.3 If-Else Statement](#if-else-statement)
+- [5.4 Elif Ladder](#elif-ladder)
+- [5.5 Nested Conditions](#nested-conditions)
+- [5.6 Indentation Rules](#indentation-rules)
 
 ## 6. Loops & Iteration
-#### 6.1 For Loop
-#### 6.2 While Loop
-#### 6.3 The range() Function
-#### 6.4 Loop Control Statements
-##### i) break
-##### ii) continue
-##### iii) pass
+- [6.1 For Loop](#for-loop)
+- [6.2 While Loop](#while-loop)
+- [6.3 The range Function](#the-range-function)
+- [6.4 Loop Control Statements](#loop-control-statements)
+  - [break](#break)
+  - [continue](#continue)
+  - [pass](#pass)
 
 ## 7. Strings
-#### 7.1 Creating Strings
-#### 7.2 String Indexing
-#### 7.3 String Slicing
-#### 7.4 Common String Methods
-#### 7.5 F-Strings
-#### 7.6 String Formatting Basics
+- [7.1 Creating Strings](#creating-strings)
+- [7.2 String Indexing](#string-indexing)
+- [7.3 String Slicing](#string-slicing)
+- [7.4 Common String Methods](#common-string-methods)
+- [7.5 F-Strings](#f-strings)
+- [7.6 String Formatting Basics](#string-formatting-basics)
 
 ## 8. Data Structures
-#### 8.1 Lists
-#### 8.2 List Methods
-#### 8.3 List Comprehensions (Intro)
-#### 8.4 Tuples
-#### 8.5 Sets
-#### 8.6 Dictionaries
-#### 8.7 Choosing the Right Data Structure
+- [8.1 Lists](#lists)
+- [8.2 List Methods](#list-methods)
+- [8.3 List Comprehensions Intro](#list-comprehensions-intro)
+- [8.4 Tuples](#tuples)
+- [8.5 Sets](#sets)
+- [8.6 Dictionaries](#dictionaries)
+- [8.7 Choosing the Right Data Structure](#choosing-the-right-data-structure)
 
 ## 9. Functions & Reusability
-#### 9.1 What are Functions?
-#### 9.2 Defining & Calling Functions
-#### 9.3 Parameters & Return Values
-#### 9.4 Default Arguments
-#### 9.5 Local vs Global Scope
-#### 9.6 Writing Clean Functions
+- [9.1 What are Functions?](#what-are-functions)
+- [9.2 Defining & Calling Functions](#defining--calling-functions)
+- [9.3 Parameters & Return Values](#parameters--return-values)
+- [9.4 Default Arguments](#default-arguments)
+- [9.5 Local vs Global Scope](#local-vs-global-scope)
+- [9.6 Writing Clean Functions](#writing-clean-functions)
 
 ## 10. Modules & Packages
-#### 10.1 What is a Module?
-#### 10.2 Importing Built-in Modules
-#### 10.3 Creating User-Defined Modules 
-#### 10.4 Installing Packages with pip
-#### 10.5 Virtual Environments (venv)
+- [10.1 What is a Module?](#what-is-a-module)
+- [10.2 Importing Built-in Modules](#importing-built-in-modules)
+- [10.3 Creating User-Defined Modules](#creating-user-defined-modules)
+- [10.4 Installing Packages with pip](#installing-packages-with-pip)
+- [10.5 Virtual Environments venv](#virtual-environments-venv)
 
 ## 11. Errors & File Handling
-#### 11.1 Types of Errors
-#### 11.2 Exceptions
-#### 11.3 Try-Except Blocks
-#### 11.4 Reading Files
-#### 11.5 Writing Files
-#### 11.6 The with Statement
+- [11.1 Types of Errors](#types-of-errors)
+- [11.2 Exceptions](#exceptions)
+- [11.3 Try-Except Blocks](#try-except-blocks)
+- [11.4 Reading Files](#reading-files)
+- [11.5 Writing Files](#writing-files)
+- [11.6 The with Statement](#the-with-statement)
 
-## 12. Object-Oriented Programming (Intro)
-#### 12.1 What is OOP?
-#### 12.2 Classes & Objects
-#### 12.3 The __init__() Method
-#### 12.4 Instance Variables
-#### 12.5 Class Methods (Basics)
+## 12. Object-Oriented Programming Intro
+- [12.1 What is OOP?](#what-is-oop)
+- [12.2 Classes & Objects](#classes--objects)
+- [12.3 The init Method](#the-init-method)
+- [12.4 Instance Variables](#instance-variables)
+- [12.5 Class Methods Basics](#class-methods-basics)
 
 ## 13. Python Best Practices
-#### 13.1 Writing Readable Code
-#### 13.2 PEP 8 Style Guide
-#### 13.3 Common Beginner Mistakes
-#### 13.4 Debugging Tips
+- [13.1 Writing Readable Code](#writing-readable-code)
+- [13.2 PEP 8 Style Guide](#pep-8-style-guide)
+- [13.3 Common Beginner Mistakes](#common-beginner-mistakes)
+- [13.4 Debugging Tips](#debugging-tips)
 
 ## 14. Useful Built-in Functions
-#### 14.1 len()
-#### 14.2 range()
-#### 14.3 sum()
-#### 14.4 max() and min()
-#### 14.5 abs()
-#### 14.6 round()
+- [14.1 len](#len)
+- [14.2 range](#range)
+- [14.3 sum](#sum)
+- [14.4 max and min](#max-and-min)
+- [14.5 abs](#abs)
+- [14.6 round](#round)
 
 ## 15. Mini Projects
-#### 15.1 Number Guessing Game
-#### 15.2 Simple Calculator
-#### 15.3 File-Based To-Do List
-#### 15.4 Password Generator
+- [15.1 Number Guessing Game](#number-guessing-game)
+- [15.2 Simple Calculator](#simple-calculator)
+- [15.3 File-Based To-Do List](#file-based-to-do-list)
+- [15.4 Password Generator](#password-generator)
 
 ## 16. What’s Next?
-#### 16.1 Where to Go After Python Basics
-#### 16.2 Learning Paths
-##### i) Web Development
-##### ii) Data Science
-##### iii) Automation
-##### iv) AI & Machine Learning
+- [16.1 Where to Go After Python Basics](#where-to-go-after-python-basics)
+- [16.2 Learning Paths](#learning-paths)
+  - [Web Development](#web-development)
+  - [Data Science](#data-science)
+  - [Automation](#automation)
+  - [AI & Machine Learning](#ai--machine-learning)
 
 ---
 # What is Python?
