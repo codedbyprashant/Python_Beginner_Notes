@@ -242,6 +242,10 @@ Python is versatile and widely used across industries:
 - **Internet of Things (IoT):** Control devices and sensors using Python on Raspberry Pi.
 - **Education & Research:** Widely used in schools and universities to teach programming and problem-solving.
 ---
+
+## [⬆ Back to Top](#table-of-contents)
+
+---
 # Installation & Setup
 Before we start coding in Python, we need to install it and set up an environment to run our programs.
 
