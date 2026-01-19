@@ -21,14 +21,13 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 - [2.3 Running Python Terminal vs IDE](#running-python-terminal-vs-ide)
 - [2.4 Setting Up VS Code](#setting-up-vs-code)
 
-## 3. Python Basics
-- [3.1 Python Shell vs Scripts](#python-shell-vs-scripts)
-- [3.2 Creating a Python File](#creating-a-python-file)
-- [3.3 Comments Single & Multi-line](#comments-single--multi-line)
-- [3.4 The print Function](#the-print-function)
-- [3.5 Variables](#variables)
-- [3.6 Naming Rules & Conventions](#naming-rules--conventions)
-- [3.7 Keywords](#keywords)
+## 3. Python Fundamentals
+- [3.1 Creating a Python File](#creating-a-python-file)
+- [3.2 Comments Single & Multi-line](#comments-single--multi-line)
+- [3.3 The print Function](#the-print-function)
+- [3.4 Variables](#variables)
+- [3.5 Naming Rules & Conventions](#naming-rules--conventions)
+- [3.6 Keywords](#keywords)
 
 ## 4. Data Types & Operators
 - [4.1 Built-in Data Types](#built-in-data-types)
@@ -44,12 +43,14 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 - [4.7 Logical Operators](#logical-operators)
 
 ## 5. User Input & Control Flow
-- [5.1 Taking User Input input](#taking-user-input-input)
-- [5.2 If Statement](#if-statement)
-- [5.3 If-Else Statement](#if-else-statement)
-- [5.4 Elif Ladder](#elif-ladder)
-- [5.5 Nested Conditions](#nested-conditions)
-- [5.6 Indentation Rules](#indentation-rules)
+- [5.1 Taking User Input (input)](#taking-user-input-input)
+- [5.2 Input Type Casting](#input-type-casting)
+- [5.3 if Statement](#if-statement)
+- [5.4 if-else Statement](#if-else-statement)
+- [5.5 elif Ladder](#elif-ladder)
+- [5.6 Nested Conditions](#nested-conditions)
+- [5.7 Indentation Rules](#indentation-rules)
+- [5.8 Ternary Operator (Conditional Expression)](#)
 
 ## 6. Loops & Iteration
 - [6.1 For Loop](#for-loop)
@@ -138,47 +139,45 @@ Don't try to memorize everything. Coding is an open-book skill. Even professiona
 ---
 # What is Python?
 
-Python is a **programming language** used to give instructions to a computer. These instructions can be simple, like printing text on the screen, or complex, like building websites, analyzing data, or training AI models.
+A computer can be instructed using Python, a **programming language**. These instructions can be straightforward, like printing text on the screen, or intricate, like creating websites, doing data analysis, or developing artificial intelligence models.
 
 
 ## Why Python is Popular
 
 Python is known for:
 
-- **Simple syntax:** Easy to read and write.
-- **Clear structure:** Organizes code in a logical way.
-- **Large community support:** Tons of tutorials, libraries, and forums.
-- **High-level language:** Lets you focus on problem-solving instead of low-level details like memory management.
+- **Simple syntax:** Easy to **read and write** thanks to its simple syntax.
+- **Clear structure:**  The code is arranged logically according to its clear structure.
+- **Large community support:** Numerous tutorials, libraries, and forums provide extensive community support.
+- **High-level language:** You may **concentrate on solving problems** rather than **low-level issues like memory managemen**t when you use **high-level language**.
 
 
 ## High-Level Language
 
-Being a high-level language means Python **hides low-level details** such as memory allocation and hardware control. You don’t need to worry about how the computer stores data—Python handles it for you—so you can focus on the **logic of your program**.
+Python **hides low-level details** like memory allocation and hardware control because it is a high-level language. Python takes care of data storage, so you don't have to worry about it and can concentrate on the **logic of your program**.
 
 ## Interpreted Language
 
-Python is an **interpreted language**, meaning code is executed **line by line** by the Python interpreter.  
+Because Python is a **interpreted language**, the Python interpreter runs code **line by line**. 
 
-Benefits of this:
-
-- Errors are easier to identify
-- Testing code is faster
-- You can run code interactively in a REPL (Read-Eval-Print Loop)
+**Advantages of this:**
+- Code testing is quicker
+- errors are simpler to find
+- code may be executed interactively in a REPL (`Read-Eval-Print Loop`)
 
 ---
 # History and Evolution of Python
 
-Python was developed in the **late 1980s** by **Guido van Rossum** at **CWI (Netherlands)** and was officially released in **1991**. The language was inspired by:
+**Guido van Rossum** created Python at **CWI (Netherlands)** in the **late 1980s** and it was formally released in **1991**. The language was inspired by:
 - The teaching language **ABC**
 - The comedy show *Monty Python’s Flying Circus*
 
 ### Major Python Versions
 
-- **Python 1.0 (1994):** Introduced core features, including class support.
-- **Python 2.0 (2000):** Added major improvements and broader library support.
-- **Python 3.0 (2008):** A major redesign focused on consistency, clarity, and long-term growth.
-
-Python 3 is the **current and recommended version** for all modern development.
+- **Python 1.0 (1994):** **Class support** was one of the fundamental features introduced in `Python 1.0` (1994).
+- **Python 2.0 (2000):** Significant enhancements and expanded library support were added in Python 2.0 (2000).
+- **Python 3.0 (2008):**Python 3.0 (2008) was a significant overhaul that prioritised long-term growth, consistency, and clarity.
+- Python 3 is the **current and recommended version** for all modern development.
 
 
 ### Origins & Early Days (Late 1980s–1991)
@@ -192,11 +191,11 @@ Python 3 is the **current and recommended version** for all modern development.
 
 # Why Learn Python?
 
-Python is beginner-friendly but powerful enough for professionals.
+Python is easy to learn and use, yet versatile and robust enough to be employed
 
-## People choose Python because:
+## Why people choose Python:
 
-- It’s easy to learn
+- Easy to learn
 
 - It’s widely used in the industry
 
@@ -209,67 +208,68 @@ Python is beginner-friendly but powerful enough for professionals.
 
 Python is popular because it comes with many built-in features that make programming easier:
 
-- **Easy to Learn and Read:** Python syntax is simple and looks like English.  
+- **Easy to Learn and Read:** Python language syntax is easy to understand. It looks like English.  
   Example:
   ```python
   print("Hello, World!")
-Readable and does exactly what it says.
+  ```
+Can be easily read and does what it says.
 
-- **Interpreted**: Python executes code line by line, so errors are easier to spot.
+- **Interpreted**: It is easier to see mistakes because Python runs code line by line.
 
-- **High-Level Language**: Python handles low-level details like memory management, so you can focus on logic and problem-solving.
+- **High-Level Language**: The low-level details associated with memory management, for instance, are dealt with by the Python language, so the programmer deals with logic solutions.
 
-- **Dynamic Typing**: You don’t need to declare variable types. Python figures them out:
+- **Dynamic Typing**: You don’t need to declare types for variables Python will determine types for them:
 
-```
+```python
    age = 20      # Integer
    name = "Alex" # String
 ```
 
-- **Extensive Libraries**: Thousands of built-in modules and third-party libraries for math, web, AI, data science, and more.
-- **Cross-Platform**: Works on Windows, Mac, Linux, and Raspberry Pi.
-- **Community Support**: A large, active community provides tutorials, help, and resources.
+- **Comprehensive Libraries**: Thousands of inbuilt and third-party libraries available for math, web, AI, and other areas.
+- **Cross-Platform**: Supports Windows, Mac, Linux, Raspberry Pi.
+- **Community Support**: The availability of a strong and active community that can offer tutorials and support.
 ---
-# Real-World Uses of Python
+# Real-World Applications of Python
 
 Python is versatile and widely used across industries:
 
 - **Web Development:** Build websites and web apps using Django and Flask.
-- **Data Science & Analytics:** Analyze data, create visualizations, and make predictions with Pandas, NumPy, Matplotlib.
-- **Artificial Intelligence & Machine Learning:** Build AI models, chatbots, and recommendation systems using TensorFlow and PyTorch.
-- **Automation & Scripting:** Automate repetitive tasks like file handling, web scraping, and emails.
-- **Game Development:** Create simple games and prototypes with Pygame.
-- **Internet of Things (IoT):** Control devices and sensors using Python on Raspberry Pi.
-- **Education & Research:** Widely used in schools and universities to teach programming and problem-solving.
+- **Data Science & Analytics:** Work with data using Pandas, visualizations using Matplotlib, predictions using NumPy.
+- **Artificial Intelligence & Machine Learning:** Develop AI systems, bots, and recommendation engines with TensorFlow & PyTorch.
+- **Automation and Scripting:** Automate repetitive activities such as file operations, web scraping, and sending emails.
+- **Game Development:** Learn to create simple games using Pygame.
+- **Internet of Things (IoT):** Controlling devices and sensors with Python programming in Raspberry Pi.
+- **Education & Research:** Extensively used in educational institutions for teaching programming and problem-solving.
 ---
 
 ## [⬆ Back to Top](#table-of-contents)
 
 ---
 # Installation & Setup
-Before we start coding in Python, we need to install it and set up an environment to run our programs.
+Before embarking on any coding project with Python, the software has to be installed and an environment created where the programs can be executed.
 
-## Installing Python
+##  Python Installation
 
-- Go to the official Python website: https://www.python.org/downloads/
+- Visit the Python download webpage: https://www.python.org/downloads/
 
-- Download the latest version for your operating system (Windows, Mac, or Linux).
+- Download the latest version based on your **operating system (Windows, Mac, or Linux**).
 
 - **Run the installer**:
 
-Important (Windows only): Check the box that says “Add Python to PATH” before clicking Install.
+Crucial (for Windows only): Make sure you check the box marked “Add Python to PATH.”
 
-Wait for the installation to complete.
+Wait for the installation to finish.
 
 ## Checking Python Version
-After installing, make sure Python is installed correctly:
+Before moving ahead, make sure Python is installed in your computer by following these steps:
 - **Open the terminal** (Command Prompt on Windows, Terminal on Mac/Linux).
 Type:
 ```
 python --version
 ```
-- You should see the Python version installed, e.g., Python 3.12.0.
-
+- You will notice that Python version is installed, for example, Python 3.12.0.
+- 
  ## Running Python (Terminal vs IDE)
 
 There are **two ways** to run Python code:
@@ -283,64 +283,42 @@ There are **two ways** to run Python code:
 Hello World!
 ```
 **2. Using Scripts (Files)**
--Write your Python code in a file with .py extension, e.g., hello.py.
-- Run it in terminal:
+- Your python file will have .py extension, for example, hello.py.
+- Execute the above in terminal:
 ```
 python hello.py
 ```
-- This is the standard way to work on bigger projects.
+- This is the usual procedure for working on larger projects.
 
 
-## Setting Up VS Code 
+## VS Code Setup
 
- VS Code is a lightweight, beginner-friendly code editor.
+ VS Code operates on the basis of a lightweight and easily accessible code editor.
 - Download VS Code: https://code.visualstudio.com/
 - Install it.
-- Install the Python Extension inside VS Code:
+- Install the Python Extension in VS Code:
 - Open VS Code → Extensions → Search “Python” → Install.
-- Open a folder for your Python projects and create .py files to start coding. eg. index.py
--You can run code directly in VS Code using the “Run” button or the integrated terminal.
+- Create a folder of your python projects and open .py files to begin writing code. ex: index.py
+- You can execute code directly from within the VS Code using either the "Run" button or the integrated terminal.
 
 ### 💡 Tip:
-For beginners, start with VS Code. It’s easier to manage files, see errors, and later work on bigger projects.
+For those who are beginning, start off with VS Code. It’s easier to manage files, see errors, and later work on bigger projects.
 
 ## [⬆ Back to Top](#table-of-contents)
 ---
 
-# Python Basics
-These are the building blocks of Python. You’ll start seeing results immediately while learning the basic concepts.
+# Python Fundamentals
+These are the building blocks of Python, and you'll instantly see results while learning the basic concepts.
 
-## Python Shell vs Scripts 
-
-**Python Shell (Interactive Mode)**
-Lets you type and run Python code line by line.
-Useful for testing small pieces of code.
-- Example:
-```
->>> 2 + 3
-5
->>> print("Hello World!")
-Hello World!
-```
-
-## Python Scripts (File Mode)
-
-Programs saved in a file with .py extension.
-
-Run the entire program at once using the terminal:
-```
-python my_script.py
-
-```
 ---
-# Creating a Python File:
+# Creation of a Python File:
 - Open Visual Studio Code.
-- Create a new file and save it with a .py extension, e.g., hello.py.
-- In Python file, we write code to perfrom tasks.
-- **💡 Tip:** For beginners, always save your scripts in a separate folder for projects to keep them organized.
+- Create a new file, and save it with a .py extension, for example hello.py.
+- In a Python file, we write code to perform tasks.
+- **💡 Tip:** Save all your scripts in a folder, say projects, so that you can maintain all your scripts at one place if you're a learner.
 ---
 # Comments Single & Multi-line
-Comments are lines in your code that Python ignores. They are used to explain what the code is doing. Comments are for humans, not for the computer.
+These are lines in your code that Python will ignore. They explain what something in the code is doing. Comments are for humans, not the computer.
 
 **Why Comments Matter:**
 - Make code easier to understand
@@ -359,20 +337,20 @@ print("Hello")  # This prints a message on the screen
 ```python
 """
 This is a multi-line comment.
-It is useful for writing longer explanations.
+It can be used for longer text composition.
 """
 ```
 ## Notes / Tips:
-- Use comments to explain why something is done, not just what is done.
-- Too many comments can be noisy, but no comments makes code hard to read.
-- Python does not have official multi-line comments. Triple quotes are often used for explanations or documentation.
+- Comments should explain why things are done, not just what is done.
+- Excessive comments are annoying comments, but a complete absence of comments makes code readability unachievable.
+- Python does not have multi-line comments. For description purposes, triple quotes can be used.
 
 ---
 # The print() Function
-The print() function is used to display output on the screen. It’s the simplest way to see the results of your code and is often the first function beginners learn in Python.
+The `print()` function is used to display output on the screen. It's the very basic way to see what your code has produced, and it's one of the first functions taught in Python.
 ## **Example / Use Case:**
 - Display text messages.
-- Show numbers or calculations.
+- Show the numbers or calculations.
 ```python
 # Printing simple text
 print("Hello World!")  #output : Hello World!
@@ -385,24 +363,24 @@ print(2 + 6)           #output : 8
 print("Hello", "World")  # outputs: Hello World
 ```
 # Variables
-- A variable is used to store data in a program. This data can be a number, text, or any other value that you want to reuse later.
-- Think of a variable as a label attached to a value.
+- A variable is a symbol that holds data inside a program. The data can be a number, a word, or any other value that can be reused later on.
+- A variable is thought of as a tag given to a value.
 
-**Why Variables Are Needed:**
+**Why Variables are Needed:**
 - To store information
 - To reuse values instead of repeating them
-- To make programs dynamic and flexible
+- To make programs dynamic and flexibility
 ```python
 name = "Python"
 age = 10
 price = 99.99
 ```
 **Here:**
-- name stores text (string)
-- age stores a whole number (integer)
-- price stores a decimal number (float)
-  
- **We will discuss string, integer,float,etc in future.             [Click Here](#built-in-data-types)**
+- name: Stores text (string)
+- age is stored as an integer
+- The price field stores a decimal number (float)
+- 
+ **We will discuss string, integer, float, etc. later.             [Click Here](#built-in-data-types)**
 
 **Using Variables with print()**
 ```python
@@ -417,6 +395,35 @@ print(age)
 ```python
 Python
 10
+```
+## Displaying Variables with Text
+### A. Using Commas (The Easiest Way)
+You can separate your text and your variable with a comma inside the print() function. Python will automatically add a space between them for you.
+
+```Python
+name = "Alice"
+print("Hello,", name) 
+# Output: Hello, Alice
+```
+### B. F-Strings (The Modern & Best Way)
+An "f-string" (formatted string) allows you to put variables directly inside a sentence using curly braces {}. You must put the letter f before the starting quote.
+```Python
+age = 25
+print(f"I am {age} years old.")
+# Output: I am 25 years old.
+```
+- Why use this? It is the cleanest way to write code and very easy to read.
+
+### C. String Concatenation (Using +)
+You can use the + sign to "glue" strings together. However, this only works with text (strings). If you try to glue a number, Python will give you an error.
+```Python
+
+city = "New York"
+print("I live in " + city)
+
+# ⚠️ This would cause an error:
+# score = 10
+# print("Score: " + score)
 ```
 ---
 # Naming Rules & Conventions
@@ -676,6 +683,12 @@ print(5 ** 2) # 25
 print(4 % 2)  # 0 → even
 print(5 % 2)  # 1 → odd
 ```
+# Practice Questions
+- Write a program to add the prices of three items: 120, 250, and 80. Print the total amount.
+- Write a program that divides one number by another and prints the remainder.
+- Write a program to find the square and cube of a given number.
+- Write a program to check whether a number is even or odd using arithmetic operators.
+- Write a program that converts seconds into minutes and remaining seconds. Example: 130 seconds → 2 minutes and 10 seconds.
 ---
 # Assignment Operators
 Assignment operators are used to **store or update values** in a variable. The simplest assignment operator is =, but there are shortcuts that combine arithmetic with assignment.
@@ -726,11 +739,18 @@ print(x)  # 0.0 (2.0 % 2)
 x = 3
 x **= 2
 print(x)  # 9 (3 squared)
+
 ```
 **Notes / Tips:**
 - These operators update the value of a variable without writing it twice.
 - +=, -=, *=, etc., are very common in loops and calculations.
 - Floor division //= keeps the integer part only.
+# Practice Questions
+- Write a program where a number starts at 10. Then:
+ **add 5**,**multiply the result by 2**, **subtract 4** and **Print the final value.**
+- Write a program to increase a number by 10 using an assignment operator.
+- Write a program to double a number using an assignment operator.
+- Write a program that divides a number by 3 and updates the same variable using an assignment operator.
 ---
 # Comparison Operators
 Comparison operators are used to **compare two values**. They return a **Boolean value**: True or False.
@@ -771,6 +791,11 @@ print(5 <= 3)  # False
 - Always remember: == is comparison, = is assignment.
 - Comparison operators return True or False.
 - Useful inside if statements and loops to control the program flow.
+# Practice Questions
+- Write a program to check if two numbers are equal.
+- Write a program to check if one number is greater than another number.
+- Write a program to check if a number is less than or equal to 100.
+- Write a program to check if two numbers are not equal.
 ---
 # Logical Operators
 Logical operators are used to **combine multiple conditions** and return a Boolean value (True or False).
@@ -805,5 +830,252 @@ print(not (5 < 3))          # True
 - **or** requires at least one condition to be True.
 - **not** simply reverses the result.
 - Logical operators are often combined with comparison operators for decision-making
+
+# Practice Questions
+- Write a program to check if a number is greater than 10 **and** less than 50.
+- Write a program to check if a number is less than 5 **or** greater than 100.
+- Write a program to reverse the result of a comparison using a logical operator. Example: change True to False or False to True.
+- Write a program to check if a person’s age is between 18 and 60.
+
 ## [⬆ Back to Top](#table-of-contents)
+
+# Data Types & Operators(Practice Question)
+- Create three variables: a = 10, b = "10", and c = 10.0. Use the type() function to print the data type of each. Are they the same?
+
+- Create a variable birth_year = "2000". Convert it to an integer, subtract it from the current year (2026), and print: "You are [age] years old." (Use an f-string).
+  
+- You bought 3 loaves of bread at $2.50 each. Create variables for quantity and price, calculate the total, and print: "Total cost: $7.5".
+  
+- Start with score = 50. Use an assignment operator (like +=) to add 15 to the score, then divide the score by 2 using /=. Print the final score.
+  
+- Write a program that compares two numbers, x = 15 and y = 20. Print the result of x > y and x != y. What are the results? (True or False).
+ 
+- Create two boolean variables: has_id = True and is_adult = True. Use the and operator to print if the person can enter the club.
+  
+- A customer gets a discount if they are a student or a senior. Create two booleans for these and use or to check if they get the discount.
+  
+- What happens when you "multiply" a string? Create a variable laugh = "Ha". Use the * operator to print "Ha" ten times in a row.
+  
+- Create a float pi = 3.14159. Use type conversion to turn it into an integer. What happened to the numbers after the decimal point?
+  
+- Create a variable is_raining = False. Use the not operator to print the opposite value.
+  
 ---
+# User Input & Control Flow
+#  Taking User Input (`input`)
+In Python, we can make programs interactive by **asking the user to type something.**
+We use the `input()` function to get text from the user. Whatever the user types will be stored in a variable so we can use it later.
+```python
+# Ask the user for their name
+name = input("Enter your name: ")
+
+# Print a greeting
+print("Hello", name)
+```
+**Explanation :**
+- `input("Enter your name: ")` shows a message on the screen.
+- Whatever the user types is stored in the variable `name`.
+- `print("Hello", name)` displays a message along with the user input.
+**Tiny tips:**
+- Always store the input in a variable if you want to use it.
+- Input is always **text (string)** by default. If you need numbers, you have to convert it (we’ll cover that later).
+---
+# Input Type Casting
+When we use input() in Python, **everything the user types is treated as text (string)**, even if they enter numbers.
+Sometimes, we want to use that input as a **number** to do calculations. For this, we need **type casting** (converting one data type into another).
+### Converting Input to Integer
+```python
+# Ask the user for a number
+num = input("Enter a number: ")
+
+# Convert string to integer
+num = int(num)
+
+# Now we can do math
+print("Double of your number is:", num * 2)
+```
+**OR**
+```python
+# Ask the user for a number and convert string to integer directly
+num = int(input("Enter a number :"))
+
+# Now we can do math
+print("Double of your number is:", num * 2)
+```
+**Explanation:**
+- `input()` returns a string by default.
+- `int()` converts the string to an integer.
+- After conversion, we can use it in arithmetic operations.
+
+### Converting Input to Float
+```python
+# Ask for a decimal number
+num = input("Enter a decimal number: ")
+
+# Convert string to float
+num = float(num)
+
+print("Half of your number is:", num / 2)
+```
+**OR**
+```python
+# Ask the user for a number and convert string to float directly
+num = float(input("Enter a number :"))
+
+# Now we can do math
+print("Half of your number is:", num / 2)
+```
+**Explanation:**
+- `float()` converts string input to a decimal number.
+- Useful for calculations involving fractions or money.
+
+### Quick Tips for Beginners
+- Always store the converted value in a variable if you need it.
+- If the user enters something invalid (like letters instead of numbers), `int()` or `float()` will give an error. We’ll learn how to handle that later.
+- Type casting lets you **mix input and calculations safely**.
+## Practice Question
+- Ask the user for their name and then print a greeting that says: `"Hello [name], welcome to Python programming!"`
+
+- Create a program that asks for a user's birth year, subtracts it from the current year (2026), and displays: `"You are [age] years old."`
+  
+- Ask the user for two numbers. Multiply them together and print the result. Ensure the program can handle decimal numbers.
+
+- Ask the user for two numbers and print their sum. Make sure to convert inputs to integers.
+---
+# if Statement
+Python programs often need to **make decisions.**
+We use the `if` statement to **check a condition** and run code only if the condition is true.
+```python
+age = 18
+
+if age >= 18:
+    print("You can vote")
+```
+**Explanation:**
+- `age >= 18` is a condition (checks if age is 18 or more).
+- The indented code under `if` runs only if the condition is true.
+- If the condition is false, Python **skips it.**
+---
+# Indentation Rules
+Python does not use curly braces `{}` like some other languages.
+Instead, it uses **indentation (spaces at the start of a line)** to know which code belongs to `if`, `else`, or loops.
+```python
+if True:
+    print("This line is indented")
+```
+**Rules for beginners:**
+- Use **4 spaces** for each indentation level.
+- Be **consistent**-don’t mix tabs and spaces.
+- Wrong indentation will cause an error.
+---
+# if-else Statement
+Sometimes we want to **do something if a condition is true, and something else if it is false**. That’s what `else` is for.
+An if statement asks a question.
+- **If** the answer is **Yes** (True), the code inside the `if` block runs.
+- **Else** (if the answer is **No**), the code inside the `else` block runs.
+
+It is impossible for both to run at the same time. It is always one or the other.
+```python
+age = 16
+
+if age >= 18:
+    print("You can vote")
+else:
+    print("You cannot vote")
+```
+**Explanation:**
+- `if` checks the first condition.
+- If it’s true → run the code under `if`.
+- If it’s false → run the code under `else`.
+---
+# elif Ladder
+When writing programs, sometimes we need to **check more than one condition.**
+
+We could write many `if` statements, but Python would check **all of them** even if one is already true. This is inefficient and can give wrong results.
+
+That’s why we use `elif`, which means “**else if**”.
+- `if` → check the first condition
+- `elif` → check another condition only if the previous `if` or `elif` was **false**
+- `else` → runs if all conditions are false
+
+**Example 1:**
+```python
+marks = int(input("Enter your marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+else:
+    print("Grade F")
+```
+**Explanation:**
+- Python first checks `if marks >= 90.`
+- If true → prints `Grade A` and skips the rest.
+- If false, Python checks the first `elif` `(marks >= 75).`
+- If that is also false, Python checks the next `elif`.
+- If none of the conditions are true, the `else` block runs.
+
+✅ Only **one block** runs, even if multiple conditions could be true.
+
+**Example 2:**
+```python
+age = int(input("Enter your age: "))
+
+if age < 13:
+    print("Child")
+elif age < 20:
+    print("Teenager")
+elif age < 60:
+    print("Adult")
+else:
+    print("Senior Citizen")
+```
+**Explanation:**
+- Python checks conditions **top to bottom**.
+- First true condition stops the ladder; remaining conditions are skipped.
+- This is more efficient than writing multiple separate `if` statements.
+
+**Common Beginner Mistakes**
+- Using multiple `if` statements instead of `elif`-can lead to multiple blocks running.
+- Forgetting to put the **colon** `:` at the end of `elif` line.
+- Placing `else` **before** `elif` (it must always come last).
+---
+# Nested Conditions
+We may need to **verify a condition inside another condition** in a program. This is referred to as a nested if or nested condition.
+
+The Benefits of Nested Conditions, Consider that you are creating a program to grant access to a club:
+
+The individual must be at **least eighteen years old.**
+They also need to have **identification.**
+We run the risk of making mistakes or repeating code if we use two if statements for checking these conditions independently. We can **check one condition first** and then another only if the first is true thanks to nested conditions.
+
+```python
+age = int(input("Enter your age: "))
+has_id = input("Do you have an ID? (yes/no): ")
+
+if age >= 18:
+    if has_id == "yes":
+        print("Entry allowed")
+    else:
+        print("Entry denied: No ID")
+else:
+    print("Entry denied: Underage")
+```
+**Explanation:**
+- First, Python checks `if age >= 18`.
+- If false -> goes directly to `else` and prints “Underage”.
+- If true -> checks the **nested** `if` for ID.
+- If ID is “yes” -> prints “Entry allowed”
+- Otherwise -> prints “Entry denied: No ID”
+
+ Using nested conditions helps ``group related checks`` logically.
+
+---
+# Ternary Operator (Conditional Expression)
+In Python, sometimes we want to **write an** `if-else` **statement in a single line**.
+This is useful for **short**, **simple decisions**.
+
+This is called the ternary operator or conditional expression.
